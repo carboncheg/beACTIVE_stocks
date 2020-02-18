@@ -1,0 +1,286 @@
+@import 'color';
+
+$font-normal: normal 600 30px 'Exo 2';
+$font-bold: normal 900 102px 'Exo 2';
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url('../img/intro-bg-1.jpg');
+    height: 800px;
+    display: flex;
+    flex-flow: column nowrap;
+
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 60px 90px 205px;
+    
+        .header-link {
+            color: $primary-grey;
+            font-family: 'Exo 2';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 43px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            span {
+                text-transform: none;
+            }
+        }
+        
+        .header-link:hover {
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+
+            a {
+                font-family: 'Exo 2';
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 36px;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $white;
+                padding: 15px;
+                transition: .3s;
+            }
+
+            a:nth-child(4) {
+                background: $primary-pink;
+                padding: 15px;
+            }
+
+            a:hover {
+                background: $hover-pink;
+                padding: 15px;
+                transition: .3s;
+                text-decoration: none;
+                color: $white;
+            }
+        }
+    }
+    
+    .header-bottom {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+
+        h2 {
+            color: $primary-grey;
+            font-family: 'Exo 2';
+            font-weight: 600;
+            font-size: 61px;
+            line-height: 73px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: $primary-grey;
+            font-family: 'Exo 2';
+            font-weight: 600;
+            font-size: 102px;
+            line-height: 122px;
+            text-transform: uppercase;
+
+            span {
+                font-size: 70px;
+                color: $primary-cyan;
+            }
+        }
+        
+        .more {
+            font-family: 'Exo 2';
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 43px;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin-top: 50px;
+            color: $white;
+            background: $primary-pink;
+            padding: 15px;
+        }
+        
+        .more:hover {
+            text-decoration: none;
+            color: $white;
+            background: $hover-pink;
+            padding: 15px;
+            transition: .3s;
+        }
+    }
+}
+
+main {
+    .our-contacts {
+        background: $contacts-grey;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 54px 0;
+
+        h3 {
+            font-family: 'Exo 2';
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 43px;
+            text-transform: uppercase;
+            color: $black;
+
+            a {
+                font-family: 'Exo 2';
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 43px;
+                text-transform: uppercase;
+                text-decoration: none;
+                margin-top: 50px;
+                color: $white;
+                background: $black;
+                padding: 15px;
+            }
+            
+            a:hover {
+                text-decoration: none;
+                color: $white;
+                opacity: .8;
+                padding: 15px;
+                transition: .3s;
+            }
+        }
+    }
+
+    .stocks {
+        background: $black;
+        text-align: center;
+        padding: 140px 80px;
+
+        h2 {
+            font-family: 'Exo 2';
+            font-weight: 600;
+            font-size: 60px;
+            line-height: 72px;
+            text-transform: uppercase;
+            color: $white;
+        }
+    }
+}
+
+footer {
+    background: $footer-grey;
+    color: $black;
+    font-family: 'Exo 2';
+    text-transform: uppercase;
+    display: flex;
+    padding: 47px 194px;
+
+    .slogan-block {
+        max-width: 50%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+
+        .footer-link {
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 43px;
+            color: $black;
+            text-decoration: none;
+
+            span {
+                text-transform: none;
+            }
+        }
+
+        .footer-link:hover {
+            text-decoration: none;
+            color: $black;
+        }
+    
+        h6 {
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.3em;
+        }
+        
+        .slogan {
+            font-size: 24px;
+            line-height: 29px;
+            margin-top: 16px;
+        }
+    
+        .copyright::before {
+            display: block;
+            content: '';
+            width: 215px;
+            border: 1px solid $black;
+            margin: 16px 0;
+        }
+    
+        .copyright {
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+    
+    .contacts {
+        max-width: 50%;
+        padding-left: 100px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+
+        .header-contacts {
+            font-weight: bold;
+        }
+    
+        h5 {
+            font-size: 31px;
+            line-height: 37px;
+
+            a {
+                text-decoration: none;
+                color: $black;
+            }
+    
+            a:hover {
+                text-decoration: none;
+                color: $black;
+            }
+        }
+    
+        .company, .phone {
+            text-transform: capitalize
+        }
+    
+        .email, .vk {
+            text-transform: none;
+        }
+    
+        .vk {
+            text-decoration-line: underline;
+        }
+    }
+}
+
+.iphone {
+    display: none;
+}
+
+@media all and (max-width: 1280px) {
+
+}

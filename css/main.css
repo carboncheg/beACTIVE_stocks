@@ -1,0 +1,203 @@
+body {
+  max-width: 1440px;
+  margin: 0 auto; }
+
+header {
+  background-image: url("../img/intro-bg-1.jpg");
+  height: 800px;
+  display: flex;
+  flex-flow: column nowrap; }
+  header .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 90px 205px; }
+    header .header-top .header-link {
+      color: #ffffff80;
+      font-family: 'Exo 2';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 43px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none; }
+      header .header-top .header-link span {
+        text-transform: none; }
+    header .header-top .header-link:hover {
+      text-decoration: none; }
+    header .header-top nav {
+      display: flex; }
+      header .header-top nav a {
+        font-family: 'Exo 2';
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 15px;
+        transition: .3s; }
+      header .header-top nav a:nth-child(4) {
+        background: #ff007ab0;
+        padding: 15px; }
+      header .header-top nav a:hover {
+        background: #FF007A;
+        padding: 15px;
+        transition: .3s;
+        text-decoration: none;
+        color: #FFFFFF; }
+  header .header-bottom {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; }
+    header .header-bottom h2 {
+      color: #ffffff80;
+      font-family: 'Exo 2';
+      font-weight: 600;
+      font-size: 61px;
+      line-height: 73px;
+      text-transform: uppercase;
+      margin-bottom: 20px; }
+    header .header-bottom h1 {
+      color: #ffffff80;
+      font-family: 'Exo 2';
+      font-weight: 600;
+      font-size: 102px;
+      line-height: 122px;
+      text-transform: uppercase; }
+      header .header-bottom h1 span {
+        font-size: 70px;
+        color: #00D1FF; }
+    header .header-bottom .more {
+      font-family: 'Exo 2';
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 43px;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin-top: 50px;
+      color: #FFFFFF;
+      background: #ff007ab0;
+      padding: 15px; }
+    header .header-bottom .more:hover {
+      text-decoration: none;
+      color: #FFFFFF;
+      background: #FF007A;
+      padding: 15px;
+      transition: .3s; }
+
+main .our-contacts {
+  background: #B8B8B8;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 54px 0; }
+  main .our-contacts h3 {
+    font-family: 'Exo 2';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    text-transform: uppercase;
+    color: #000000; }
+    main .our-contacts h3 a {
+      font-family: 'Exo 2';
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 43px;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin-top: 50px;
+      color: #FFFFFF;
+      background: #000000;
+      padding: 15px; }
+    main .our-contacts h3 a:hover {
+      text-decoration: none;
+      color: #FFFFFF;
+      opacity: .8;
+      padding: 15px;
+      transition: .3s; }
+
+main .stocks {
+  background: #000000;
+  text-align: center;
+  padding: 140px 80px; }
+  main .stocks h2 {
+    font-family: 'Exo 2';
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+    text-transform: uppercase;
+    color: #FFFFFF; }
+
+footer {
+  background: #8A8A8A;
+  color: #000000;
+  font-family: 'Exo 2';
+  text-transform: uppercase;
+  display: flex;
+  padding: 47px 194px; }
+  footer .slogan-block {
+    max-width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between; }
+    footer .slogan-block .footer-link {
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 43px;
+      color: #000000;
+      text-decoration: none; }
+      footer .slogan-block .footer-link span {
+        text-transform: none; }
+    footer .slogan-block .footer-link:hover {
+      text-decoration: none;
+      color: #000000; }
+    footer .slogan-block h6 {
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.3em; }
+    footer .slogan-block .slogan {
+      font-size: 24px;
+      line-height: 29px;
+      margin-top: 16px; }
+    footer .slogan-block .copyright::before {
+      display: block;
+      content: '';
+      width: 215px;
+      border: 1px solid #000000;
+      margin: 16px 0; }
+    footer .slogan-block .copyright {
+      font-size: 30px;
+      line-height: 36px; }
+  footer .contacts {
+    max-width: 50%;
+    padding-left: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between; }
+    footer .contacts .header-contacts {
+      font-weight: bold; }
+    footer .contacts h5 {
+      font-size: 31px;
+      line-height: 37px; }
+      footer .contacts h5 a {
+        text-decoration: none;
+        color: #000000; }
+      footer .contacts h5 a:hover {
+        text-decoration: none;
+        color: #000000; }
+    footer .contacts .company, footer .contacts .phone {
+      text-transform: capitalize; }
+    footer .contacts .email, footer .contacts .vk {
+      text-transform: none; }
+    footer .contacts .vk {
+      text-decoration-line: underline; }
+
+.iphone {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */
