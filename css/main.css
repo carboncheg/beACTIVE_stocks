@@ -1,6 +1,10 @@
+html {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; }
+
 body {
-  max-width: 1440px;
-  margin: 0 auto; }
+  width: 1440px; }
 
 header {
   background-image: url("../img/intro-bg-1.jpg");
